@@ -1,0 +1,45 @@
+<!-- Cette page est une copie du site W3schools en lien en-dessous -->
+<!-- https://www.w3schools.com/howto/howto_css_calendar.asp -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Lien vers la page css -->
+  <link rel="stylesheet" href="monstyle.css">
+  <!--<meta http-equiv="refresh" content="7"> -->
+  <title>Calendar</title>
+</head>
+<!-- Simple page html -->
+<body onkeypress="Type()">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="MONTH(-1)">&#10094;</li>
+    <li class="next" onclick="MONTH(1)">&#10095;</li>
+    <li>
+      <div onclick="MONTH(0)" style="cursor:pointer;">&#916;</div>
+      <div id=time></div>
+      <div id=month></div>
+      <div id=year></div>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days" id="day"></ul>
+
+<!-- Petite fonctionnalité en plus -->
+<p id="type"></p>
+
+<!-- Lien vers la page javascript -->
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
